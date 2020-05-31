@@ -10,7 +10,7 @@ export default function Home({ navigation }) {
   return (
     <Container>
       <View>
-        <Title>EVIT19</Title>
+        <Title>HUGKET</Title>
         <View style={{ alignItems: 'center' }}>
           <Title isSize={6} color="#1E90FF">
             HUG SOMEONE
@@ -25,6 +25,7 @@ export default function Home({ navigation }) {
       </Button>
       <Button onPress={() => navigation.navigate('Settings')}>SETTINGS</Button>
       <Button onPress={() => navigation.navigate('Help')}>I NEED HELP</Button>
+      <Button onPress={() => navigation.navigate('About')}>ABOUT</Button>
       <Button color="#00BFFF" fontColor={colors.bue}>
         FIND FRIENDS
       </Button>

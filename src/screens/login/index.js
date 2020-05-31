@@ -13,7 +13,7 @@ export const App = ({ navigation }) => {
   return (
     <Container>
       <View>
-        <Title isSize={3}>Welcome to EVIT19 </Title>
+        <Title isSize={3}>Welcome to HUGKET </Title>
       </View>
 
       <View>

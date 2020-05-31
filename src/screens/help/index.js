@@ -10,7 +10,7 @@ export default function Help({ navigation }) {
   return (
     <Container>
       <View>
-        <Title>EVIT19</Title>
+        <Title>HUGKET</Title>
         <View style={{ alignItems: 'center' }}>
           <Title isSize={3} color="#1E90FF">
             Help

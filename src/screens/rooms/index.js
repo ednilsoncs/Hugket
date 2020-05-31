@@ -12,7 +12,7 @@ export default function ({ navigation }) {
   return (
     <Container>
       <View>
-        <Title>EVIT19</Title>
+        <Title>HUGKET</Title>
       </View>
       <View style={{ alignItems: 'center' }}>
         <Title isSize={3} color="#1E90FF">
@@ -23,7 +23,7 @@ export default function ({ navigation }) {
         <TouchableOpacity
           onPress={() =>
             navigation.navigate('Room', {
-              idVideo: '1FvwPEKgcsA',
+              idVideo: 'nA9UZF-SZoQ',
             })
           }
         >
