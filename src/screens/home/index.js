@@ -1,9 +1,10 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import { Container } from './styles';
-import { Button, Title, Text } from '../../components';
+import { Container, Image } from './styles';
+import { Button, Title } from '../../components';
 import { colors } from '../../theme';
+import jaqueta from '../../assets/images/jaqueta.png';
 
 export default function Home({ navigation }) {
   return (
@@ -16,7 +17,7 @@ export default function Home({ navigation }) {
           </Title>
         </View>
       </View>
-
+      <Image source={jaqueta} />
       <Button icon="connect">CONNECT YOUR JACKET</Button>
 
       <Button onPress={() => navigation.navigate('Rooms')}>

@@ -13,3 +13,8 @@ export const Container = styled.ImageBackground.attrs({
   justify-content: space-evenly;
   padding-top: ${ifIphoneX ? getStatusBarHeight(true) : 0};
 `;
+
+export const Image = styled.Image`
+  max-width: 350px;
+  height: 200px;
+`;
