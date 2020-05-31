@@ -1,8 +1,9 @@
 const colors = {
-  black: '#231F00',
+  black: '#231F0f',
   white: '#FFFFFF',
   grey: '#918f90',
   greyDark: '#59570',
+  red: '#cc3300',
 };
 
 const fonts = {

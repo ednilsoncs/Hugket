@@ -22,6 +22,7 @@ export const Touchable = styled.TouchableOpacity`
 `;
 
 export const Text = styled.Text`
-  color: ${(props) => (props.isDisabled ? colors.white : colors.white)};
+  color: ${(props) => (props.isDisabled ? colors.white : colors.red)};
+  font-family: '${fonts.title}';
   font-size: ${type.body}px;
 `;
