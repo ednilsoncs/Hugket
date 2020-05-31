@@ -6,6 +6,7 @@ import Login from './screens/login';
 import Cadastro from './screens/cadastro';
 import Home from './screens/home';
 import Room from './screens/room';
+import Rooms from './screens/rooms';
 import { colors } from './theme';
 
 const AppStack = createStackNavigator();
@@ -36,6 +37,11 @@ const Routes = () => {
         <AppStack.Screen
           name="Room"
           component={Room}
+          options={{ headerShown: false }}
+        />
+        <AppStack.Screen
+          name="Rooms"
+          component={Rooms}
           options={{ headerShown: false }}
         />
       </AppStack.Navigator>

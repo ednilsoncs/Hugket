@@ -19,7 +19,7 @@ export default function Home({ navigation }) {
 
       <Button icon="connect">CONNECT YOUR JACKET</Button>
 
-      <Button onPress={() => navigation.navigate('Room')}>
+      <Button onPress={() => navigation.navigate('Rooms')}>
         CONNECT IN ROOM
       </Button>
       <Button>SETTINGS</Button>
