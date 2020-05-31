@@ -5,7 +5,7 @@ import { colors, fonts, type, sizes } from '../../theme';
 
 export const Container = styled.View`
   height: ${sizes.buttonHeight}px;
-  background: ${colors.white};
+  background: transparent;
   position: relative;
   margin: 5px 0;
   opacity: 1;
@@ -18,7 +18,7 @@ export const Touchable = styled.TouchableOpacity`
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  border-radius: 6px;
+  border-radius: 20px;
 `;
 
 export const Text = styled.Text`
