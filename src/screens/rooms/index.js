@@ -1,7 +1,7 @@
 import React from 'react';
 import { FlatList, View, ScrollView } from 'react-native';
 import { Container, Image } from './styles';
-import { Title, Text } from '../../components';
+import { Title } from '../../components';
 import praia from '../../assets/images/praia.jpeg';
 import quarto from '../../assets/images/quarto.jpeg';
 import space from '../../assets/images/space.jpeg';
@@ -27,15 +27,21 @@ export default function ({ navigation }) {
             })
           }
         >
-          <Text color={colors.blue}>Beach</Text>
+          <Title isSize={3} color={colors.blue}>
+            Beach
+          </Title>
           <Image source={praia} />
         </TouchableOpacity>
         <TouchableOpacity>
-          <Text color={colors.blue}>Bedroom</Text>
+          <Title isSize={3} color={colors.blue}>
+            Bedroom
+          </Title>
           <Image source={quarto} />
         </TouchableOpacity>
         <TouchableOpacity>
-          <Text color={colors.blue}>Space</Text>
+          <Title isSize={3} color={colors.blue}>
+            Space
+          </Title>
           <Image source={praia} />
         </TouchableOpacity>
       </ScrollView>
