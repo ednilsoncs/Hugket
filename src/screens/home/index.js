@@ -23,7 +23,8 @@ export default function Home({ navigation }) {
       <Button onPress={() => navigation.navigate('Rooms')}>
         CONNECT IN ROOM
       </Button>
-      <Button>SETTINGS</Button>
+      <Button onPress={() => navigation.navigate('Settings')}>SETTINGS</Button>
+      <Button onPress={() => navigation.navigate('Help')}>I NEED HELP</Button>
       <Button color="#00BFFF" fontColor={colors.bue}>
         FIND FRIENDS
       </Button>
