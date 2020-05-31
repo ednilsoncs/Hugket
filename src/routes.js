@@ -4,6 +4,9 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import Login from './screens/login';
 import Cadastro from './screens/cadastro';
+import Home from './screens/home';
+import Room from './screens/room';
+import { colors } from './theme';
 
 const AppStack = createStackNavigator();
 
@@ -19,7 +22,21 @@ const Routes = () => {
         <AppStack.Screen
           name="Cadastro"
           component={Cadastro}
-          options={{ headerTransparent: true, title: '' }}
+          options={{
+            headerTransparent: true,
+            title: '',
+            headerTintColor: colors.blue,
+          }}
+        />
+        <AppStack.Screen
+          name="Home"
+          component={Home}
+          options={{ headerShown: false }}
+        />
+        <AppStack.Screen
+          name="Room"
+          component={Room}
+          options={{ headerShown: false }}
         />
       </AppStack.Navigator>
     </NavigationContainer>
