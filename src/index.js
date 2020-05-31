@@ -13,7 +13,7 @@ const s = StyleSheet.create({
 
 const App = () => (
   <KeyboardAvoidingView
-    behavior="position"
+    behavior="padding"
     style={s.container}
     contentContainerStyle={s.container}
     keyboardVerticalOffset={-400}
