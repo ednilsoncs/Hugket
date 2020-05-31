@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View } from 'react-native';
 import { Input, Button, Title } from '../../components';
 import { Container } from './styles';
+import { colors } from '../../theme';
 
 export const App = ({ navigation }) => {
   const { navigate } = navigation;
@@ -12,7 +13,7 @@ export const App = ({ navigation }) => {
       <Title isSize={3}>Cadastro</Title>
       <View>
         <Input
-          placeholder="Nome Completo"
+          placeholder="Full Name"
           value={email}
           onChange={(value) => setEmail({ value })}
         />
@@ -22,20 +23,24 @@ export const App = ({ navigation }) => {
           onChange={(value) => setEmail({ value })}
         />
         <Input
-          placeholder="Senha"
+          placeholder="Password"
           value={email}
           onChange={(value) => setEmail({ value })}
         />
         <Input
-          placeholder="Confirmar senha"
+          placeholder="Confirm Password"
           value={senha}
           onChange={(value) => setSenha({ value })}
         />
       </View>
       <View>
-        <Button onPress={() => navigate('Login')}>CADASTRAR</Button>
-        <Button onPress={() => navigate('Login')} color="#fff">
-          VOLTAR
+        <Button onPress={() => navigate('Login')}>REGISTER</Button>
+        <Button
+          onPress={() => navigate('Login')}
+          color="#00BFFF"
+          fontColor={colors.blue}
+        >
+          BACK
         </Button>
       </View>
     </Container>

@@ -3,7 +3,8 @@ import LottieView from 'lottie-react-native';
 import { View } from 'react-native';
 import { Input, Button, Title } from '../../components';
 import { Container } from './styles';
-import hugAnimation from '../../assets/animations/hug.json';
+import { colors } from '../../theme';
+import { animations } from '../../assets/animations';
 
 export const App = ({ navigation }) => {
   const { navigate } = navigation;
@@ -12,7 +13,7 @@ export const App = ({ navigation }) => {
   return (
     <Container>
       <View>
-        <Title isSize={3}>Bem vindo ao EVIT19 </Title>
+        <Title isSize={3}>Welcome to EVIT19 </Title>
       </View>
 
       <View>
@@ -28,21 +29,28 @@ export const App = ({ navigation }) => {
         />
       </View>
       <View>
-        <Button>LOGIN</Button>
+        <Button
+          onPress={() => {
+            navigate('Home');
+          }}
+        >
+          LOGIN
+        </Button>
         <Button
           onPress={() => {
             navigate('Cadastro');
           }}
-          color="#fff"
+          color="#00BFFF"
+          fontColor={colors.blue}
         >
-          CADASTRAR
+          SIGN IN
         </Button>
       </View>
       <View style={{ alignItems: 'center' }}>
         <Title isSize={7}>Desenvolvido By Mandacaru</Title>
         <LottieView
           style={{ padding: 30 }}
-          source={hugAnimation}
+          source={animations.hug}
           autoPlay
           loop
         />

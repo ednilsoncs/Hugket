@@ -18,7 +18,7 @@ export const TextInput = styled.TextInput`
   height: ${sizes.buttonHeight}px;
   border: 1.5px;
   border-radius: 15px;
-  border-color: ${colors.black};
+  border-color: ${colors.blue};
   font-size: ${type.body};
   color: ${colors.black};
   font-family: ${fonts.regular};

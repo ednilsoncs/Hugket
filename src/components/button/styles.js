@@ -13,7 +13,7 @@ export const Container = styled.View`
 
 export const Touchable = styled.TouchableOpacity`
   height: 50px;
-  background: ${(props) => props.color || colors.black};
+  background: ${(props) => props.color || colors.blue};
   opacity: ${(props) => (props.isDisabled ? '0.2' : '1')};
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@ export const Touchable = styled.TouchableOpacity`
 `;
 
 export const Text = styled.Text`
-  color: ${(props) => (props.isDisabled ? colors.white : colors.red)};
+  color: ${(props) => (props.isDisabled ? colors.white : colors.white)};
   font-family: '${fonts.title}';
   font-size: ${type.body}px;
 `;
