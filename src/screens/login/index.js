@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import LottieView from 'lottie-react-native';
 import { View } from 'react-native';
 import { Input, Button, Title } from '../../components';
 import { Container } from './styles';
+import hugAnimation from '../../assets/animations/hug.json';
 
 export const App = ({ navigation }) => {
   const { navigate } = navigation;
@@ -9,7 +11,10 @@ export const App = ({ navigation }) => {
   const [senha, setSenha] = useState('');
   return (
     <Container>
-      <Title isSize={3}>Bem vindo ao EVIT19</Title>
+      <View>
+        <Title isSize={3}>Bem vindo ao EVIT19 </Title>
+      </View>
+
       <View>
         <Input
           placeholder="Email"
@@ -32,6 +37,15 @@ export const App = ({ navigation }) => {
         >
           CADASTRAR
         </Button>
+      </View>
+      <View style={{ alignItems: 'center' }}>
+        <Title isSize={7}>Desenvolvido By Mandacaru</Title>
+        <LottieView
+          style={{ padding: 30 }}
+          source={hugAnimation}
+          autoPlay
+          loop
+        />
       </View>
     </Container>
   );
