@@ -7,7 +7,8 @@ export const Container = Styled.View`
 `;
 
 export const Image = Styled.Image`
-  max-width: 350px;
+  max-width: 300px;
+  height: 300px;
   margin-top: 5px;
   margin-bottom: 20px
 `;

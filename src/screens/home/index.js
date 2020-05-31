@@ -17,7 +17,7 @@ export default function Home({ navigation }) {
           </Title>
         </View>
       </View>
-      <Image source={jaqueta} />
+      <Image source={jaqueta} style={{ minHeight: 110 }} />
       <Button icon="connect">CONNECT YOUR JACKET</Button>
 
       <Button onPress={() => navigation.navigate('Rooms')}>
