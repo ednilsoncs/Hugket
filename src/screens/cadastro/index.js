@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { View } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
 import { Input, Button, Title } from '../../components';
 import { Container } from './styles';
 
@@ -34,8 +33,10 @@ export const App = ({ navigation }) => {
         />
       </View>
       <View>
-        <Button>LOGIN</Button>
-        <Button color="#fff">CADASTRAR</Button>
+        <Button onPress={() => navigate('Login')}>CADASTRAR</Button>
+        <Button onPress={() => navigate('Login')} color="#fff">
+          VOLTAR
+        </Button>
       </View>
     </Container>
   );
