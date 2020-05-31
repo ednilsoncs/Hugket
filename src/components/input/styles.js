@@ -8,15 +8,16 @@ export const Container = styled.View`
 `;
 export const Label = styled.Text`
   position: absolute;
-  margin-bottom: 5px;
+  margin-left: 10px;
   color: ${colors.black};
-  bottom: ${({ isActive }) => (isActive ? '45px' : '17px')};
+  bottom: ${({ isActive }) => (isActive ? '50px' : '17px')};
   font-weight: ${({ isActive }) => (isActive ? 700 : 500)};
 `;
 
 export const TextInput = styled.TextInput`
   height: ${sizes.buttonHeight}px;
   border: 1.5px;
+  border-radius: 15px;
   border-color: ${colors.black};
   font-size: ${type.body};
   color: ${colors.black};
